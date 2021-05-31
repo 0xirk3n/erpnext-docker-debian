@@ -25,8 +25,8 @@ python -m compileall apps
 rm -rf ./sites/site1.local
 
 # create new site
-bench new-site dev32.loc
-bench use dev32.loc
+bench new-site t003.app.toolmas.com
+bench use t003.app.toolmas.com
 bench install-app erpnext
 bench set-config developer_mode 1
 
