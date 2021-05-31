@@ -9,7 +9,7 @@ upstream bench-socketio-server {
 server {
         listen 80;
         server_name
-                ${NGINX_SERVER_NAME}
+                t003.app.toolmas.com
                 ;
 
         root /home/frappe/bench/sites;
