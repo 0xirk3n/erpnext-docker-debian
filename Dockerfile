@@ -31,7 +31,7 @@ ENV benchPath=bench-repo \
     benchBranch=master \
     frappeRepo="https://github.com/frappe/frappe" \
     erpnextRepo="https://github.com/frappe/erpnext" \
-    siteName=t003.app.toolmas.com
+    siteName=erpnext.app.toolmas.com
 
 ###############################################
 # INSTALL PREREQUISITE
