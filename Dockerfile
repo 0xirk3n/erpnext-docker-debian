@@ -250,4 +250,4 @@ WORKDIR /home/$systemUser/$benchFolderName
 CMD ["/usr/local/bin/entrypoint.sh"]
 
 # expose port
-EXPOSE 8000 9000 3306
+# EXPOSE 8000 9000 3306
