@@ -229,12 +229,12 @@ RUN sudo service mysql start \
 # COPY
 ###############################################
 # production config
-# COPY --chown=1000:1000 production_setup/conf/frappe-docker-conf /home/$systemUser/production_config
-# RUN sudo chmod +x /home/$systemUser/production_config/entrypoint_prd.sh
+COPY --chown=1000:1000 production_setup/conf/frappe-docker-conf /home/$systemUser/production_config
+RUN sudo chmod +x /home/$systemUser/production_config/entrypoint_prd.sh
 
 # developmen config
-COPY --chown=1000:1000 development_setup/conf/frappe-docker-conf /home/$systemUser/development_setup
-RUN sudo chmod +x /home/$systemUser/development_setup/init.sh 
+# COPY --chown=1000:1000 development_setup/conf/frappe-docker-conf /home/$systemUser/development_setup
+# RUN sudo chmod +x /home/$systemUser/development_setup/init.sh 
 
 # image entrypoint && set entrypoint permission
 ## prevent: docker Error response from daemon OCI runtime create failed starting container process caused "permission denied" unknown
