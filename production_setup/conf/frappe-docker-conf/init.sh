@@ -19,8 +19,8 @@ rm -rf $siteName
 cd ..
 
 # create new site
-bench new-site $benchNewSiteName
-bench use $benchNewSiteName
+bench new-site erpnext.app.toolmas.com
+bench use erpnext.app.toolmas.com
 
 # create install erpnext
 bench install-app erpnext
